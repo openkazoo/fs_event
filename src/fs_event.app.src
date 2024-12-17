@@ -1,0 +1,17 @@
+{application, fs_event,
+ [{description, "File system events"},
+  {vsn, "1.1.0"},
+  {registered, []},
+  {applications, [kernel, stdlib]},
+  {mod, {fs_event_app, []}},
+  {env, []},
+  {maintainers, ["openkazoo"]},
+  {licenses, ["GNU GPL"]},
+  {links, [{"Github", "https://github.com/openkazoo/fs_event"}]},
+  {modules, []},
+  {runtime_dependencies, [
+    "erts >= 12.0", % OTP 24
+    "kernel >= 8.0",
+    "stdlib >= 3.0"
+  ]}
+ ]}.
